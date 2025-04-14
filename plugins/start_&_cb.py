@@ -35,6 +35,7 @@ import random, asyncio, datetime, pytz, time, psutil, shutil
 # pyrogram imports
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceReply, CallbackQuery
+from pyrogram.enums import ParseMode
 
 # bots imports
 from helper.database import digital_botz
@@ -95,7 +96,7 @@ async def start(client, message):
             photo=Config.RKN_PIC,
             caption=rkn.START_TXT.format(user.mention),
             reply_markup=InlineKeyboardMarkup(start_button),
-            parse_mode=None
+            parse_mode=ParseMode.HTML
         )
     else:
         await client.send_message(
@@ -103,7 +104,7 @@ async def start(client, message):
             text=rkn.START_TXT.format(user.mention),
             reply_markup=InlineKeyboardMarkup(start_button),
             disable_web_page_preview=True,
-            parse_mode=None
+            parse_mode=ParseMode.HTML
         )
 
 
