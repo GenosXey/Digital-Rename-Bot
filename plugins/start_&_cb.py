@@ -83,7 +83,7 @@ async def start(client, message):
     for sticker_id in stickers:
         try:
             s = await client.send_sticker(chat_id=message.chat.id, sticker=sticker_id)
-            await asyncio.sleep(0.7)
+            await asyncio.sleep(1.1)
             await s.delete()
         except:
             pass
