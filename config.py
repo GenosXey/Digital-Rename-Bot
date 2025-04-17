@@ -36,7 +36,7 @@ class Config(object):
     # digital_botz client config
     API_ID = os.environ.get("API_ID", "24817837")
     API_HASH = os.environ.get("API_HASH", "acd9f0cc6beb08ce59383cf250052686")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7561380664:AAEhCXpPAX5e__dF5E-M4OASdYTzvn7KrCI") 
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7561380664:AAExB4yPbg2_TylrTu9PgezvKTbrfpnnmyQ") 
 
     # premium account string session required 😢 
     STRING_SESSION = os.environ.get("STRING_SESSION", "")
